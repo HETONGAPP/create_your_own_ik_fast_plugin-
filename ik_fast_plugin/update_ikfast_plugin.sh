@@ -1,0 +1,1 @@
+rosrun moveit_ikfast create_ikfast_moveit_plugin.py arm arm ik_fast_plugin /home/tong/catkin_ps/src/ik_fast_plugin/src/arm_arm_ikfast_solver.cpp
