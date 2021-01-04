@@ -16,16 +16,16 @@ git clone https://github.com/ros-planning/moveit_ikfast.git
 sudo apt-get install ros-indigo-openrave
 
 # Create Collada File For Use With OpenRave
-# rosrun collada_urdf urdf_to_collada <myrobot_name>.urdf <myrobot_name>.dae
+rosrun collada_urdf urdf_to_collada <myrobot_name>.urdf <myrobot_name>.dae
 
 rosrun collada_urdf urdf_to_collada new.urdf new.dae
 
-# rosrun moveit_ikfast round_collada_numbers.py <myrobot_name>.dae <myrobot_name>.rounded.dae 5
+rosrun moveit_ikfast round_collada_numbers.py <myrobot_name>.dae <myrobot_name>.rounded.dae 5
 
 rosrun moveit_ikfast round_collada_numbers.py new.dae new.rounded.dae 5
 
 # check the link index
-# openrave-robot.py <myrobot_name>.dae --info links
+openrave-robot.py <myrobot_name>.dae --info links
 
 openrave-robot.py new.round.dae --info links
 
