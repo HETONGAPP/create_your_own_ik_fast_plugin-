@@ -84,6 +84,6 @@ catkin_make
 
 rosed arm_moveit_config/config/kinematics.yaml
 change kinematics_solver: arm_arm_kinematics/IKFastKinematicsPlugin
-
+kdl_kinematics_plugin/KDLKinematicsPlugin
 # run the code
 roslaunch arm_moveit_config demo_gazebo
